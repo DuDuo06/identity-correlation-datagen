@@ -1,0 +1,18 @@
+#创建一个叫做实体解析(_S)的图空间
+创建空间实体_分辨率(vid_type=FIXED_STRING(30))；
+使用实体_分辨率；
+
+#创建点的类型TAG
+创建标签'用户'('name'字符串不为空，'电子邮件'字符串不为空，'phone_num'字符串不为空，'birthy'日期不为空，'地址'字符串不为空)；
+创建tag"address"("address"字符串不为NULL)；
+create TAG'Device'('uuid'字串NOT NULL)；
+创建标签“电子邮件”()；
+创建标记'ip'()；
+创建标签“电话”()；
+
+#创建边的类型边缘类型
+create EDGE'used_device'('time'时间戳NOT NULL)；
+create EDGE'logged_in_from'('time'时间戳不为NULL)；
+创建边缘'has_phone'()；
+创建边'has_address‘()；
+创建边'has_email'()；
